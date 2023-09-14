@@ -7,19 +7,19 @@ const getRandomColor = () => {
   return color;
 };
 
-export const Statistics = ({ title, stats }) => {
+export const Statistics = ({ title, dataList }) => {
   return (
     <section className="statistics">
       {title && <h2 className="title">{title}</h2>}
       <ul className="stat-list">
-        {stats.map(stat => (
+        {dataList.map(data => (
           <li
             className="item"
-            key={stat.id}
+            key={data.id}
             style={{ backgroundColor: getRandomColor() }}
           >
-            <span className="label">{stat.label}</span>
-            <span className="percentage">{stat.percentage}%</span>
+            <span className="label">{data.label} </span>
+            <span className="percentage">{data.percentage}%</span>
           </li>
         ))}
       </ul>
