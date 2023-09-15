@@ -15,6 +15,8 @@ export const App = () => {
       />
 
       <Statistics title="Statistics" dataList={dataList} />
+
+      {/* <FriendList /> */}
     </>
   );
 };

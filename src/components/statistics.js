@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const getRandomColor = () => {
   const letters = '0123456789ABCDEF';
   let color = '#';
@@ -25,4 +27,12 @@ export const Statistics = ({ title, dataList }) => {
       </ul>
     </section>
   );
+};
+
+Statistics.prototype = {
+  title: PropTypes.string.isRequired,
+  dataList: PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  }).isRequired,
 };
