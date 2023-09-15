@@ -1,0 +1,26 @@
+.listFriend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+  margin-bottom: 10px;
+
+  width: 200px;
+
+  background-color: blanchedalmond;
+}
+
+.online {
+  color: green;
+
+  width: 25px;
+  height: 25px;
+}
+
+.offline {
+  color: red;
+
+  width: 2%;
+  height: 25px;
+}
