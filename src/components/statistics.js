@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './statistics.css';
+import css from './statistics.module.css';
 
 const getRandomColor = () => {
   const letters = '0123456789ABCDEF';
@@ -12,12 +12,12 @@ const getRandomColor = () => {
 
 export const Statistics = ({ title, dataList }) => {
   return (
-    <section className="statistics">
+    <section className={css.statistics}>
       {title && <h1 className="title">{title}</h1>}
-      <ul className="stat-list">
+      <ul className={css.statList}>
         {dataList.map(data => (
           <li
-            className="item"
+            className={css.item}
             key={data.id}
             style={{ backgroundColor: getRandomColor() }}
           >
