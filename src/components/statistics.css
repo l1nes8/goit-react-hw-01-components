@@ -1,0 +1,13 @@
+.statistics {
+  width: 300px;
+  background-color: white;
+  margin-left: 5px;
+}
+
+.stat-list {
+  display: flex;
+}
+
+.item {
+  padding: 5px 0px;
+}

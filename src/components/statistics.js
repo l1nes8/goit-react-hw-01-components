@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './statistics.css';
 
 const getRandomColor = () => {
   const letters = '0123456789ABCDEF';
