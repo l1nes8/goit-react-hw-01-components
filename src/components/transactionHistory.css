@@ -1,0 +1,15 @@
+.tableHead {
+  background-color: blue;
+}
+
+.tableBody {
+  background-color: white;
+}
+
+.white {
+  color: white;
+}
+
+.thText {
+  padding: 15px 50px;
+}
