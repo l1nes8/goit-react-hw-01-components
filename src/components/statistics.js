@@ -12,7 +12,7 @@ const getRandomColor = () => {
 export const Statistics = ({ title, dataList }) => {
   return (
     <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
+      {title && <h1 className="title">{title}</h1>}
       <ul className="stat-list">
         {dataList.map(data => (
           <li

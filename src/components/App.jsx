@@ -4,10 +4,13 @@ import dataList from '../data.json';
 import { Statistics } from './statistics';
 import friends from '../friends.json';
 import { FriendList } from './friendList';
+import transaction from '../transactions.json';
+import { TransactionHistory } from './transactionHistory';
 
 export const App = () => {
   return (
     <>
+      <h1>Profile</h1>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -16,7 +19,10 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Statistics" dataList={dataList} />
-      <FriendList friends={friends} />;
+      <h1>FriendList</h1>
+      <FriendList friends={friends} />
+      <h1>TransactionHistory</h1>
+      <TransactionHistory items={transaction} />
     </>
   );
 };
